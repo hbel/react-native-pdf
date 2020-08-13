@@ -36,6 +36,7 @@ export type Props = {
   enableAnnotationRendering?: boolean,
   enableAntialiasing?: boolean,
   enablePaging?: boolean,
+  suppressScrolling?: boolean,
   enableRTL?: boolean,
   fitPolicy?: FitWidth | FitHeight | FitBoth,
   horizontal?: boolean,
