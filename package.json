@@ -1,6 +1,6 @@
 {
   "name": "hbel_react-native-pdf",
-  "version": "6.2.4",
+  "version": "6.2.5",
   "summary": "A react native PDF view component",
   "description": "A react native PDF view component, support ios and android platform",
   "main": "index.js",
