@@ -283,6 +283,24 @@ const float MIN_SCALE = 1.0f;
                         }
                     }
                 }
+            } else {
+                for(UIView *sub in _pdfView.subviews) {
+                    for(UIView *subview in sub.subviews) {
+                        UIScrollView* sw = (UIScrollView *)subview;
+                        if ([sw isKindOfClass:[UIScrollView class]]) {
+                            sw.scrollEnabled = YES;
+                            for(UIView *subv in sw.subviews) {
+                                for(UIView *subvv in subv.subviews) {
+                                    for(UIView *subvvv in subvv.subviews) {
+                                        UIScrollView* sw = (UIScrollView *)subvvv;
+                                        sw.scrollEnabled = YES;
+                                        sw.showsVerticalScrollIndicator = NO;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         
