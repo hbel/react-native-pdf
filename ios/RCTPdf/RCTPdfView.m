@@ -264,8 +264,8 @@ const float MIN_SCALE = 1.0f;
             }
         }
 
-        if (_pdfDocument && ([changedProps containsObject:@"path"] || [changedProps containsObject:@"enablePaging"])) {
-            if (_enablePaging) {
+        if (_pdfDocument && ([changedProps containsObject:@"path"] || [changedProps containsObject:@"suppressScrolling"])) {
+            if (_suppressScrolling) {
                 for(UIView *sub in _pdfView.subviews) {
                     for(UIView *subview in sub.subviews) {
                         UIScrollView* sw = (UIScrollView *)subview;
